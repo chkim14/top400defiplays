@@ -1,0 +1,21 @@
+version: '3.6'
+
+services: 
+  defi_postgres: 
+   image: postgres:13-alpine
+   ports:
+    - "5432:5432"
+    environment: 
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: test
+        POSTGRES_DB: defi_db 
+
+  defi_api: 
+    image: defi
+    build:
+        context: .
+        target: build_deps
+    depends_on:
+     - defi_postgres
+    ports: 
+     - "8080:8080" 
