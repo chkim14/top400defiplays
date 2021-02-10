@@ -1,0 +1,19 @@
+{
+  "name": "top400defiplays",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chkim14/top400defiplays.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chkim14/top400defiplays/issues"
+  },
+  "homepage": "https://github.com/chkim14/top400defiplays#readme"
+}
