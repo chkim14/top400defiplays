@@ -4,16 +4,28 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "migrate": "knex migrate:latest",
+    "rollback": "knex migrate:rollback",
+    "seed": "knex seed:run "
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chkim14/top400defiplays.git"
   },
-  "author": "",
+  "author": "MinMax",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chkim14/top400defiplays/issues"
   },
-  "homepage": "https://github.com/chkim14/top400defiplays#readme"
+  "homepage": "https://github.com/chkim14/top400defiplays#readme",
+  "dependencies": {
+    "config": "^3.3.3",
+    "dotenv": "^8.2.0",
+    "knex": "^0.21.17",
+    "save": "^2.4.0"
+  },
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
 }
